@@ -4,6 +4,7 @@ import ErrorPage from "../ErrorPage";
 import { Login } from "../Login";
 import { AppLayout } from "../AppLayout";
 import { ForgetPassword } from "../ForgetPassword";
+import { Compose } from "../Compose";
 export function MainRouter(){ 
 
 const router=createBrowserRouter([
@@ -24,6 +25,10 @@ const router=createBrowserRouter([
         {
             path:'forget',
             element:<ForgetPassword/>
+        },
+        {
+            path:"compose",
+            element:<Compose/>
         }
         
     ]
