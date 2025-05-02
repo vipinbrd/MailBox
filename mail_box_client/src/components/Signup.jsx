@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export function Signup() {
   const emailRef = useRef();
@@ -35,9 +36,11 @@ export function Signup() {
             Sign Up
           </button>
         </form>
+        <Link to='login'>
         <button className="mt-4 text-sm text-blue-600 hover:underline w-full text-center">
           Already have an account? Login
         </button>
+        </Link>
       </div>
     </div>
   );
